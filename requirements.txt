@@ -1,0 +1,8 @@
+transformers>=4.43.0
+gradio>=4.0.0
+torch
+torchaudio
+datasets[audio]
+accelerate
+requests
+gtts
