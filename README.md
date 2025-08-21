@@ -54,7 +54,3 @@ The project uses different models and libraries to work properly:
 - The app takes time at the beginning because Whisper processes the audio locally, without an API.
 - If an API was used for transcription, the process would be faster and the output quality would improve.
 - In the part where text is converted to audio, a generative AI model was not used because it took too long to produce the output. That’s why other methods were chosen instead.
-
-
-
-
