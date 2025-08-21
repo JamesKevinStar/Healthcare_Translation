@@ -9,6 +9,7 @@ No external APIs are used, focusing on privacy, sustainability, and reproducibil
 - [Environment](#environment)
 - [Components](#components)
 - [Procedure](#procedure)
+- [Security](#security)
 - [Results](#results)
 - [Conclusions](#conclusions)
 
@@ -44,6 +45,11 @@ The project uses different models and libraries to work properly:
 ### 4. Voice Generation 
 - The translated text is sent to the module that converts it into audio using gTTS.
 
+## Security
+- User information is never stored at any point, all data is deleted after the process.
+- The data sent to the Llama model via API is not saved by the model and is automatically deleted after a few minutes.
+- No personal data is required, collected, stored, or shared during the use of this app.
+
 ## Results
 - A functional prototype was successfully created.
 - Generative AI models were used for the main tasks.
@@ -54,3 +60,4 @@ The project uses different models and libraries to work properly:
 - The app takes time at the beginning because Whisper processes the audio locally, without an API.
 - If an API was used for transcription, the process would be faster and the output quality would improve.
 - In the part where text is converted to audio, a generative AI model was not used because it took too long to produce the output. That’s why other methods were chosen instead.
+
