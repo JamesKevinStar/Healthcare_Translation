@@ -17,6 +17,8 @@ No external APIs are used, focusing on privacy, sustainability, and reproducibil
 - The environment is free but limited. It runs on CPU.
 - You can see the demo at: [HealthcareTranslation on Hugging Face Spaces](https://huggingface.co/spaces/JamesKevinStar/HealthcareTranslation)
 
+![UI](ImgReadMe/ImgUI.png)
+
 ## Components 
 The project uses different models and libraries to work properly:
   - **Whisper**: Used to get the text from the user's audio.
@@ -52,5 +54,6 @@ The project uses different models and libraries to work properly:
 - The app takes time at the beginning because Whisper processes the audio locally, without an API.
 - If an API was used for transcription, the process would be faster and the output quality would improve.
 - En la parte de convertir texto a audio, no se usó un modelo de IA generativa porque demoraba mucho tiempo en generar el output, por eso se decidió hacerlo con otros métodos.
+
 
 
