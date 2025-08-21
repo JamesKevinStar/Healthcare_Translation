@@ -26,20 +26,20 @@ The project uses different models and libraries to work properly:
  
 ## Procedure
 
-### 1. Entrada de Voz. 
+### 1. Voice Input. 
 - The user can upload an audio file or record using a microphone.
 - The audio is saved in `.wav` format and sent to the processing modules.
 
-### 2. Obtención de Texto.
+### 2. Text Extraction.
 - The audio is processed using Whisper, which returns the spoken text with high accuracy.
 - The extracted text is sent to the next modules for translation and voice generation.
 
-### 3. Traducción y Detección de Idioma.
+### 3. Translation and Language Detection.
 - The text is sent to the Llama 3.2 Instruct model with a specific role and instruction.
 - The model returns the translated text and also detects the original language.
 - Both tasks use the Hugging Face API.
 
-### 4. Generación de Voz 
+### 4. Voice Generation 
 - The translated text is sent to the module that converts it into audio using gTTS.
 
 ## Results
@@ -52,4 +52,5 @@ The project uses different models and libraries to work properly:
 - The app takes time at the beginning because Whisper processes the audio locally, without an API.
 - If an API was used for transcription, the process would be faster and the output quality would improve.
 - En la parte de convertir texto a audio, no se usó un modelo de IA generativa porque demoraba mucho tiempo en generar el output, por eso se decidió hacerlo con otros métodos.
+
 
