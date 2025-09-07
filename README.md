@@ -1,4 +1,4 @@
-# Receipt Information Extraction
+# Demo for Translation and Transcription
 
 ## Description:
 This project helps communication between patients and healthcare professionals who speak different languages. It uses a web app that integrates open-source AI models for speech transcription, translation, and voice synthesis.  
@@ -61,3 +61,4 @@ The project uses different models and libraries to work properly:
 - If an API was used for transcription, the process would be faster and the output quality would improve.
 - In the part where text is converted to audio, a generative AI model was not used because it took too long to produce the output. That’s why other methods were chosen instead.
 - I am aware that some models offer better performance for medical terminology, but for this demo, I prioritized functionality using tools I already knew and had experience with.
+
