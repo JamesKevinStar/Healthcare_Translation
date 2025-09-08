@@ -17,9 +17,6 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
-# Cargar pipeline de Bark
-bark_pipe = pipeline("text-to-speech", "suno/bark-small")
-
 # Cargar pipeline de Whisper
 whisper_pipe = pipeline("automatic-speech-recognition", 
                 model = "openai/whisper-tiny",
@@ -85,4 +82,5 @@ def generar_audio(texto, lang='en'):
     tts = gTTS(text = texto, lang = lang)
     output_path = "output.mp3"
     tts.save(output_path)
+
     return output_path
